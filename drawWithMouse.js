@@ -1,10 +1,11 @@
 let fillColor = "yellow";
 let strokeColor;
 let notSet = true;
+let c;
 
 function setup() {
     // put setup code here
-    createCanvas(400, 400);
+    c = createCanvas(400, 400);
     background(40);
 
     strokeColor = color(255,80,116);
@@ -33,5 +34,5 @@ function setup() {
   }
 
   function mousePressed() {
-    background(40);
+    saveCanvas(c, 'myCanvas', 'jpg');
   }
